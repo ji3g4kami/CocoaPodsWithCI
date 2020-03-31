@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var myButton: UIButton!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    myButton.snp.makeConstraints { make in
+      make.centerX.centerY.equalToSuperview()
+    }
   }
 
 
