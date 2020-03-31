@@ -7,5 +7,6 @@ target 'CocoaPodsWithCI' do
 
   # Pods for CocoaPodsWithCI
   pod 'SnapKit'
+  pod 'RxSwift'
 
 end

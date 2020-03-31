@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import RxSwift
 
 class ViewController: UIViewController {
 
@@ -22,7 +23,9 @@ class ViewController: UIViewController {
 
 
   @IBAction func buttonPressed(_ sender: UIButton) {
-    print("Hello")
+    Observable.of(1, 2, 3, 4, 5)
+      .subscribe(onNext: { print($0) })
+      .dispose()
   }
 }
 
